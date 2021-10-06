@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class=" button navigation-link" href="#">
             <span class="visually-hidden">
               Хочу сюда!
             </span>
@@ -49,19 +50,27 @@
     </nav>
   </header>
   <main class="main-index">
-    <h1 class="visually-hidden">Небольшой городок «Седона»</h1>
-    <img class="main-logo" src="img\main-logo.svg" alt="Логотип городка «Седона»" width="458" height="352">
+    <div class="background">
+      <h1 class="visually-hidden">Небольшой городок «Седона»</h1>
+      <img class="main-logo" src="img\main-logo.svg" alt="Логотип городка «Седона»" width="458" height="352">
+    </div>
+
     <h2 class="about-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <section class="advantages">
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="reason">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ol class="advantages-list">
         <li class="advantages-item">
-          <h3 class="advantages-title">Настоящий городок</h3>
-          <p class="advantages-number">— №1 —</p>
-          <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт
-            своя жизнь</p>
+          <div class="blue-bg-color">
+            <h3 class="advantages-title">Настоящий городок</h3>
+            <p class="advantages-number">— №1 —</p>
+            <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт
+              своя жизнь</p>
+          </div>
+          <div class="example-img-one">
+
+          </div>
           <ul class="advantages-example-list">
-            <li class="advantages-example-item">
+            <li class="box-color">
               <h3 class="advantages-example-title">Жильё</h3>
               <p class="advantages-example-discription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
@@ -70,28 +79,32 @@
               <p class="advantages-example-discription">Всегда заказывайтетоповый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="advantages-example-item">
+            <li class="box-color">
               <h3 class="advantages-example-title">Сувениры</h3>
               <p class="advantages-example-discription">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </li>
-        <li class="advantages-item">
+        <li class="blue-bg-color">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-number">— №2 —</p>
           <p class="advantages-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
-        <li class="advantages-item">
+        <div class="example-img-two">
+
+        </div>
+
+        <li class="box-color">
           <h3 class="advantages-title-difcolor">Небольшая площадь</h3>
           <p class="advantages-number-difcolor">— №3 —</p>
           <p class="advantages-discription-difcolor">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item-difcolor">
           <h3 class="advantages-title-difcolor">Красивая дорога</h3>
           <p class="advantages-number-difcolor">— №4 —</p>
           <p class="advantages-discription-difcolor">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="advantages-item">
+        <li class="box-color">
           <h3 class="advantages-title-difcolor">Мало туристов</h3>
           <p class="advantages-number-difcolor">— №5 —</p>
           <p class="advantages-discription-difcolor">Большинство едет в Гранд Каньон и толпится там</p>
@@ -100,7 +113,7 @@
     </section>
     <section class="interesting">
       <h2 class="interesting-title">Заинтересовались?</h2>
-      <p class="interesting-dop">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
       <a class="find-hotel" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
     </section>
@@ -113,27 +126,28 @@
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletters-email" id="newsletters-email"
             required>
         </p>
-        <button class="button newsletters-button" type="submit">
+        <button class=" newsletters-button" type="submit">
           <span class="visually-hidden">Подписаться</span>
         </button>
       </form>
     </section>
+
   </main>
   <footer class="page-footer">
     <section class="our-socials">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <a href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
           </a>
         <li class="social-item">
-          <a class="button" href="https://facebook.com/htmlacademy">
+          <a href="https://facebook.com/htmlacademy">
             <span class="visually-hidden">Фейсбук</span>
 
           </a>
         <li class="social-item">
-          <a class="button" href="https://youtube.com/c/HTMLAcademyRUS">
+          <a href="https://youtube.com/c/HTMLAcademyRUS">
             <span class="visually-hidden">Ютуб</span>
           </a>
       </ul>
@@ -144,7 +158,11 @@
     </section>
     <section class="creator">
       <h2 class="visually-hidden">Сайт разработчика</h2>
-      <a class="creator-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="creator-link" href="https://htmlacademy.ru/">
+        <div class="html-logo">
+
+        </div>
+      </a>
     </section>
   </footer>
 </body>
