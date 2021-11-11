@@ -38,6 +38,17 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #756257;
+  color: white;
+}
+
 
 .page-header {
   position: relative;
@@ -65,21 +76,83 @@ body {
 }
 
 .navigation-link {
+  position:relative;
   display: block;
-  padding-top: 19px;
-  padding-bottom: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 7px 9px;
+  margin-top:12px;
+  margin-bottom:13px;
+  margin-right:7px;
+  margin-left:7px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   background-color: #FFFFFF;
   color: black;
   text-decoration: none;
+  border-radius: 10px;
+  z-index:0;
+}
+.navigation-link:hover {
+  color: #756257;
+}
+.navigation-link:focus {
+  outline:3px solid #83B3D3;
+  color: #756257;
+}
+.navigation-item{
+  position: relative;
+}
+.navigation-user .navigation-item:nth-of-type(2)::before {
+  position: absolute;
+  top:15px;
+  right:-3px;
+  
+  width: 19px;
+  height: 19px;
+ 
+  border-radius: 50%;
+  background-color: #7DB54F;;
+  content: "12";
+  color:white;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: center;
+  z-index:2;
 }
 
-.navigation-list:first-child {
+.navigation-current::before {
+  position: absolute;
+  right: 9px;
+  bottom: -14px;
+  left: 9px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+  
+}
+
+.navigation-list {
   margin-left: 55px;
+}
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+.navigation-link:hover .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-link:focus .navigation-icon {
+  fill: #756257;
 }
 
 
@@ -96,13 +169,14 @@ body {
 
 
 
-.navigation-user:last-child {
+.navigation-user {
   margin-right: 72px;
 }
 
 
 .navigation-user .navigation-link {
-  padding: 24px 10px;
+  padding: 7px 7px;
+  margin:17px 3px;
   min-width: 18px;
   min-height: 17px;
 }
@@ -125,7 +199,24 @@ body {
   background-color: #756257;
   color: white;
   text-decoration: none;
+  border-radius:4px;
 
+}
+.button:hover {
+  background-color: #615048;
+}
+.button:focus {
+  box-shadow:0 0 0 3px #83B3D3;
+  outline:none;
+  background-color: #615048;
+}
+.another-button:hover {
+  background-color:#68A2CA;
+}
+.another-button:focus {
+  box-shadow:0 0 0 3px #756257;
+  outline:none;
+  background-color: #68A2CA;
 }
 
 
@@ -243,7 +334,18 @@ body {
 }
 
 .box-color {
+  width:400px;
   background: rgba(131, 179, 211, 0.12);
+}
+.advantages-example-list li:first-of-type {
+  background-image: url(../img/housing.svg);
+  background-repeat: no-repeat;
+  background-position: top 89px center;
+}
+.advantages-example-list li:last-child {
+background-image: url(../img/souvenirs.svg);
+background-repeat: no-repeat;
+background-position: top 85px center;
 }
 
 .blue-bg-color {
@@ -252,9 +354,12 @@ body {
   color: white;
 }
 
-.box-color,
+
 .advantages-example-item {
   width: 400px;
+  background-image: url(../img/food.svg);
+  background-repeat: no-repeat;
+  background-position: top 91px center;
 }
 
 .advantages-item-difcolor {
@@ -324,7 +429,7 @@ body {
   color: white;
   background-color: #756257;
   text-decoration: none;
-  ;
+  border-radius: 10px;
 }
 
 .newsletters {
@@ -384,6 +489,7 @@ body {
   background-color: #83B3D3;
   text-transform: uppercase;
   color: white;
+  border-radius: 0px 10px 10px 0px;
 
 }
 
@@ -394,39 +500,75 @@ body {
 }
 
 .social-list {
+
   display: flex;
   flex-wrap: wrap;
-  ;
+
   width: 194px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+.social-link {
+  position:relative;
+  display:block;
+  border-radius: 10px;
 
-.social-item:first-child {
-  margin-left: 56px;
 }
 
-.social-item {
-  padding: 15px;
-  margin-top: 35px;
-  margin-bottom: 40px;
-}
 
-.twitter-icon {
+.social-list {
+  margin-left:56px;
+}
+.social-link:first-child {
+  margin-left: 7px;
+  margin-right:7px;
+  margin-top:40px;
+  margin-bottom: 45px;
+  padding:10px 8px;
   min-width: 18px;
   min-height: 15px;
-}
 
-.facebook-icon {
+}
+.social-link:nth-child(2) {
+  padding:8px 12px;
+  margin-top:42px;
+  margin-bottom: 47px;
+  margin-left: 3px;
+  margin-right: 3px;
   min-width: 10px;
   min-height: 18px;
 }
-
-.youtube-icon {
+.social-link:last-child {
+  padding:9px 7px;
+  margin-top:41px;
+  margin-bottom: 46px;
+  margin-left:8px;
+  margin-right:8px;
   min-width: 20px;
   min-height: 16px;
 }
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
+}
+.social-link:focus {
+  outline: 3px solid #83B3D3;
+}
+.social-link:hover .social-icon {
+  fill:#68A2CA;
+}
+
+.social-link:focus .social-icon {
+  fill:#68A2CA;
+}
+
+
 
 .contacts {
   margin-left: 45px;
@@ -440,36 +582,54 @@ body {
 
 
 .contacts-phone {
+  padding:14px;
+  padding-bottom:11px;
   font-weight: normal;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: black;
   text-decoration: none;
+  border-radius: 10px;
+}
+.contacts-phone:hover {
+  color:#8a796f;
+}
+.contacts-phone:focus {
+  outline: 3px solid #83B3D3;
+  color:#8a796f;
+}
+.creator-link {
+  position: relative;
+  display:inline-block;
+  padding:15px 19px;
+  margin-left: 34px;
+  margin-right: 53px;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  min-width: 115px;
+  min-height: 33px;
+}
+.creator-link:hover .creator-icon {
+  fill:#756257;
+}
+.creator-link:focus {
+  outline:3px solid #83B3D3;
+  fill:#756257;
+}
+.creator-link:focus .creator-icon {
+  fill:#756257;
 }
 
-.html-logo {
-  display: block;
-  background-image: url("../img/logo-html.svg");
-  width: 115px;
-  height: 33px;
-  margin-left: 53px;
-  margin-right: 72px;
-  margin-top: 42px;
-  margin-bottom: 45px;
-
-
-}
-
-.button {
-  font-family: "PT Sans", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #756257;
-  color: white;
+.creator-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin:auto;
+  fill: #000000;
 }
 
 .navigation-link-current {
