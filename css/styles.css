@@ -280,7 +280,7 @@ body {
   width: 138px;
   height: 70px;
   margin-bottom: -5px;
-  margin-left: 93px;
+  margin-left: 91px;
   margin-right: 122px;
 
 }
@@ -318,7 +318,7 @@ body {
 
   margin: 0 auto;
   margin-top: 63px;
-  margin-bottom: 23px;
+  margin-bottom: 33px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -357,8 +357,8 @@ body {
 }
 
 .advantages-example-title {
-  margin-top: 184px;
-  margin-bottom: 20px;
+  margin-top: 185px;
+  margin-bottom: 19px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 24px;
@@ -366,12 +366,13 @@ body {
 }
 
 .advantages-example-discription {
-  margin-bottom: 79px;
+  margin-top: 0;
+  margin-bottom: 89px;
 }
 
 .advantages-title {
   margin-top: 97px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -379,7 +380,7 @@ body {
 }
 
 .advantages-number {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .advantages-discription {
@@ -389,6 +390,10 @@ body {
 .box-color {
   width: 400px;
   background: rgba(131, 179, 211, 0.12);
+}
+
+.box-color .advantages-discription {
+  margin-bottom: 111px;
 }
 
 .advantages-example-list .box-color:first-of-type {
@@ -455,8 +460,8 @@ body {
 
 .interesting-title {
   margin: 0 auto;
-  margin-top: 91px;
-  margin-bottom: 15px;
+  margin-top: 88px;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -466,7 +471,7 @@ body {
 .interesting-dop {
 
   margin: 0 auto;
-  margin-bottom: 73px;
+  margin-bottom: 57px;
 }
 
 
@@ -505,7 +510,7 @@ body {
   width: 720px;
   margin: 0 auto;
   margin-top: 94px;
-  margin-bottom: 15px;
+  margin-bottom: 27px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -515,7 +520,7 @@ body {
 .newsletters-dop {
 
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
@@ -524,7 +529,7 @@ body {
 .newsletters-form {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
+  margin-bottom: 78px;
 }
 
 .field {
@@ -611,7 +616,7 @@ body {
   margin-left: 56px;
 }
 
-.social-link:first-child {
+.social-item:first-of-type .social-link {
   margin-left: 7px;
   margin-right: 7px;
   margin-top: 40px;
@@ -622,7 +627,7 @@ body {
 
 }
 
-.social-link:nth-child(2) {
+.social-item:nth-child(2) .social-link {
   padding: 8px 12px;
   margin-top: 42px;
   margin-bottom: 47px;
@@ -632,7 +637,7 @@ body {
   min-height: 18px;
 }
 
-.social-link:last-child {
+.social-item:last-of-type .social-link {
   padding: 9px 7px;
   margin-top: 41px;
   margin-bottom: 46px;
@@ -672,10 +677,11 @@ body {
 
 
 .contacts {
-  margin-left: 45px;
-  margin-top: 40px;
+
+  margin-top: 37px;
   margin-bottom: 30px;
-  width: 720px;
+  margin-right: 10px;
+  width: 700px;
 
   text-align: center;
 }
@@ -1113,7 +1119,7 @@ body {
 
 .catalog-filter {
   display: flex;
-  padding-bottom: 83px;
+  padding-bottom: 73px;
 
 
 }
@@ -1232,11 +1238,11 @@ body {
 
 .catalog-title {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 48px;
   font-weight: bold;
   font-size: 60px;
-  line-height: 78px;
-  margin-bottom: 4px;
+  line-height: 51px;
+  margin-bottom: 8px;
   padding-left: 71px;
 
 }
@@ -1462,10 +1468,10 @@ body {
   text-transform: uppercase;
   background-color: #83B3D3;
   color: inherit;
-  margin-top: 59px;
+  margin-top: 62px;
   margin-bottom: 20px;
   border-radius: 4px;
-  padding: 13px 33px 14px 33px;
+  padding: 13px 35px 14px 35px;
   border: none;
 }
 
@@ -1518,13 +1524,14 @@ body {
 
 .sorting-box {
   display: flex;
+  margin-bottom: 28px;
 
 }
 
 
 .filtred-hotels-title {
-  margin-top: 50px;
-  margin-bottom: 45px;
+  margin-top: 47px;
+
   margin-right: 192px;
   font-weight: bold;
   font-size: 30px;
@@ -1543,7 +1550,7 @@ body {
   width: 48px;
   height: 48px;
   margin-top: 44px;
-  margin-bottom: 42px;
+
   margin-right: 8px;
   border-radius: 4px;
 }
@@ -1598,9 +1605,9 @@ body {
 }
 
 .select-control {
-  padding: 10px 78px 11px 18px;
+  padding: 8px 102px 13px 16px;
   margin-top: 44px;
-  margin-bottom: 42px;
+
 
 
 }
@@ -1634,7 +1641,7 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 180px 36px 680px 160px;
-  grid-template-rows: 31px min-content min-content min-content 31px;
+  grid-template-rows: 30px min-content min-content min-content 25px;
 
   border-top: 1px solid #E6E6E6;
 }
@@ -1669,7 +1676,6 @@ body {
   width: fit-content;
   height: fit-content;
   text-decoration: none;
-
   grid-column: 3/-2;
   grid-row: 2/3;
   border-radius: 4px;
@@ -1701,6 +1707,7 @@ body {
   display: inline-block;
   margin: 0;
   padding: 0;
+  margin-top: -12px;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
@@ -1724,13 +1731,26 @@ body {
 
 }
 
-.info-hotel {
+.info-hotel,
+.info-hotel-cost {
   margin: 0;
+  margin-top: -16px;
 }
 
-.info-hotel:not(:last-of-type) {
+
+.info-hotel {
   margin-right: 78px;
 }
+
+.hotel-apart {
+  margin-right: 52px;
+}
+
+.hotel-motel {
+  margin-right: 100px;
+}
+
+
 
 .buttons-area {
   display: flex;
@@ -1743,6 +1763,7 @@ body {
 
 .area-item {
   padding: 8px 32px 8px 32px;
+
 
 }
 
@@ -1770,7 +1791,7 @@ body {
   color: white;
   border: none;
   border-radius: 4px;
-
+  padding: 8px 29px 8px 29px;
 }
 
 .checked:hover {
@@ -1817,6 +1838,14 @@ body {
   align-self: center;
 }
 
+.hotel-stars {
+  margin-top: -20px;
+}
+
+.stars-container .hotel-stars:not(:last-of-type) {
+  margin-right: 8px;
+}
+
 .show-more-container {
   display: flex;
   justify-content: center;
@@ -1832,8 +1861,8 @@ body {
   padding: 0;
   border: none;
 
-  margin-top: 31px;
-  margin-bottom: 30px;
+  margin-top: 29px;
+  margin-bottom: 28px;
   border-radius: 4px;
   width: 625px;
   height: 55px;
@@ -1874,8 +1903,12 @@ body {
   border-radius: 4px;
 }
 
+.pagination-item:nth-of-type(5) .pagination-link {
+  padding: 15px 20px 15px 20px;
+}
+
 .pagination-item:last-of-type .pagination-link {
-  padding: 15px 16px 15px 18px;
+  padding: 15px 16px 15px 17px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1948,8 +1981,8 @@ body {
 .newsletters-catalog-title {
 
   margin: 0 auto;
-  margin-top: 89px;
-  margin-bottom: 15px;
+  margin-top: 86px;
+  margin-bottom: 28px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -1960,7 +1993,7 @@ body {
 .newsletters-catalog-dop {
 
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
@@ -1975,7 +2008,7 @@ body {
 }
 
 .newsletters-catalog .newsletters-form {
-  margin-bottom: 138px;
+  margin-bottom: 123px;
 }
 
 .popover {
